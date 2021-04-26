@@ -36,7 +36,8 @@ System.out.println("The value of pi is approximately " + pi);
         //Calculate the perimeter and area of Codeup
 
         //1.
-        System.out.println("Enter the length and width of classrom");
+        System.out.println("Enter the length and width of classroom");
+
 
 
 
