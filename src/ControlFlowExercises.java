@@ -53,12 +53,12 @@ public class ControlFlowExercises {
 
 
 //refactor
-        for (long i = 2; i < 1000000; i *= i) {
-            System.out.println(i);
-
-
-        }
-
+//        for (long i = 2; i < 1000000; i *= i) {
+//            System.out.println(i);
+//
+//
+//        }
+//
 
 //2. Fizzbuzz
 
@@ -70,21 +70,29 @@ public class ControlFlowExercises {
 //        } while ( i <= 100);
 
         // multiples of three print fizz
-        int i = 1;
-        do {
-            System.out.println(i);
-            i = i % 3 ==0;
-        } while ( i <= 100);
+        for (int i = 1; i <= 100; i++) {
+            if( i % 15 ==0){
+                System.out.println("FizzBuzz");
+            }
+            else if (i % 3 == 0) {
+                System.out.println("Fizz");
+            } else if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+
+                System.out.println(i); // else is what happens when no conditions are met
+            }
+      }
+
+
+        //3. Display a table of powers
 
 
 
-
+            }
         }
 
 
-
-
-        }
 
 
 
