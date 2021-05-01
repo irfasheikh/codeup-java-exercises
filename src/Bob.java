@@ -8,13 +8,13 @@ public class Bob {
 //        String nothing = "Fine. Be that way!"; // empty input
 //        String anything = "Whatever."; // input end w other
 
-        // if else
+
 
         Scanner scanner = new Scanner(System.in);
         String userInput = scanner.nextLine();
         System.out.println(userInput);
 
-       // if()
+       if(userInput.endsWith("?"))
 
     }
 }
