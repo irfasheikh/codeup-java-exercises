@@ -162,6 +162,18 @@ public class ControlandLoopsLec {
                 continue;
             }
             System.out.println("nice! even nums" + i );
+
+
+
+
+            //**** WALKTHROUGH***///
+
+
+
+
+
+
+
         }
     }
 }
