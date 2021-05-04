@@ -10,5 +10,7 @@ public class ArraysExercises {
 
 String [] personOne = new String [2];
 
+//use previous person class ??
+
     }
 }
