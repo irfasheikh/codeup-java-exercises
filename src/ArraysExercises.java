@@ -35,6 +35,12 @@ Person Larry = new Person ("Larry");
         Person[] newPersons = Arrays.copyOf(people, people.length + 1);
                 newPersons[newPersons.length-1] = person; // this gives us the index of the last spot and then we pass the person into the last spot
         return newPersons;
+
+
+
+
+
+
     }
 }
 
