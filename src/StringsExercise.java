@@ -46,10 +46,8 @@ public class StringsExercise {
         String backslash = "I can do backslashes \\, double backslashes\\\\, \n and the amazing triple backslash \\\\\\";
         System.out.println(backslash);
 
-
-
-
-// we need 2 \\ to display 1 backslash ---2 per backslash
+        //NOTE://
+// we need 2 \\ to display 1 backslash ---2 per backslash so, to show 2 we need 4 to show 3 we need 6 etc
 
 
     }

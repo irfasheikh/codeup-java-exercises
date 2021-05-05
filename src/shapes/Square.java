@@ -1,5 +1,5 @@
 package shapes;
 
-//public class Square extends Rectangle {
-//    private int side;
-//}
+public class Square extends Rectangle {
+    private int side;
+}

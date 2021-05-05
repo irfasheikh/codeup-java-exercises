@@ -8,7 +8,7 @@ public class Rectangle {
 
     //create constructors
 
-//    public Rectangle (){ //since length is never 0 we don't need it bc length is never 0
+//    public Rectangle (){ // you got this from lecture ex but since length is never 0 we don't need it
 //        this.length =0;
 //    }
 
@@ -17,7 +17,7 @@ public class Rectangle {
         this.width= width;
     }
 
-//    public Rectangle (){ ///same thing here width is never 0
+//    public Rectangle (){ ///same thing here width is never 0 so we don't put this part
 //        this.width = 0;
 //    }
 

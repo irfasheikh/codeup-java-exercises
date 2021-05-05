@@ -1,41 +1,44 @@
 import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
-
-        boolean talkMore = true;
+// where does the prompt for the user to initiate convo go?
+//        boolean talkMore = true;
         String question = "Sure."; //input end ?
         String yell = "Whoa, chill out!"; //input end !
         String nothing = "Fine. Be that way!"; // empty input
         String anything = "Whatever."; // input end w other
 
-
+        boolean talkMore = true; // where does this go? here or above line 5?
         Scanner scanner = new Scanner(System.in);
 
         String userInput = scanner.nextLine();
         System.out.println(userInput);
+        do {
+            //fix conditional and loop
+            if (userInput.endsWith("?")) {
+                System.out.println(question);
+            } else if (userInput.endsWith("!")) {
+                System.out.println(yell);
+            } else if (userInput.endsWith("")) {
+                System.out.println(nothing);
+            } else if (userInput.endsWith(".")) {
+                System.out.println(anything);
+            }
+            System.out.println("Do you still want to talk to Bob? [y/n]");
+            String keepGoing = scanner.nextLine();
 
-        //fixed conditional and loop
-        if (userInput.endsWith("?")) {
-            System.out.println(question);
-        } else if (userInput.endsWith("!")) {
-            System.out.println(yell);
-        } else if (userInput.endsWith(" ")) {
-            System.out.println(nothing);
-        } else if (userInput.endsWith(".")) {
-            System.out.println(anything);
-        }
-        System.out.println("Do you want still want to talk to Bob? [y/n]");
-        String keepGoing = scanner.nextLine();
-
-        if (keepGoing.equalsIgnoreCase("y")) {
-            talkMore = true; // this is the boolean from the top
-        } else {
-            talkMore = false;
+            if (keepGoing.equalsIgnoreCase("y")) {
+                talkMore = true; // this is the boolean from the top
+            } else {
+                talkMore = false;
 
 
-    } while(talkMore);
+            }
+
+        } while (talkMore) ; // what is this part saying
+    }
 }
-}
+
 
 //!!WALKTHROUGH!!//
 
@@ -82,10 +85,7 @@ public class Bob {
 //                    keepTalking = false;
 //                }
 //
-//                //if ? = "sure"
-//                //else if ! = "whoa! chill out!"
-//                // else if "" = "Fine. be that way."
-//                // else everything else = "whatever."
+//
 //
 //
 //            } while (keepTalking);
@@ -93,4 +93,8 @@ public class Bob {
 //        }
 //    }
 
-
+//if ? = "sure"
+//                //else if ! = "whoa! chill out!"
+//                // else if "" = "Fine. be that way."
+//                // else everything else = "whatever."
+// this is from the very beginning- is just writing out the problem breaking it down and setting up --pseudo code not real code
