@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Random;
 public class MethodsExercises {
     public static void main(String[] args) {
 //        System.out.println(addition(1, 2));
@@ -10,8 +10,8 @@ public class MethodsExercises {
 //        getInteger(1, 10);
 //    }
 
-    // Basic Arithmetic
-    //1.
+        // Basic Arithmetic
+        //1.
 //    public static int addition(int num1, int num2) {
 //        return num1 + num2;
 //
@@ -95,21 +95,47 @@ public class MethodsExercises {
 
 
         //4. dice rolling
-
-        public static void getRolling(int roll){
+        boolean letsGo;
+        do {
+            // in the main method ask how many sides the dice have
+            System.out.println("Let's get ready to roll! that! dice!");
+            System.out.println("How many sides do the pair of dice have?");  //invoking sout and passing in string
+            Scanner scanner = new Scanner(System.in);
+            int input = scanner.nextInt(); // the users input is the # of sides
+            // now we have the inputs, we can pass it into the method
+            getRolling(input);
+            // this is going to give back a dice roll
+            System.out.println(getRolling(input)); // this prints out one of the dice
+            System.out.println(getRolling(input));// this rolls the dice a second time
+            System.out.println("Do you want to keep rolling? [y/n]");
+            String keepGoing = scanner.nextLine();
+            if (keepGoing.equals("y")) {
+                letsGo = true;
+            } else if (keepGoing.equals("n")) {
+                letsGo = false; //else is always going to be false
+            }
+        } while (letsGo)
+    }
+        public static double getRolling ( int sides){
             // it's void bc you are just spitting out what the user is inputing,
             // public void you are using the method but you are not expecting an outcome from the function itself.
             // void you are just getting the answer not making something to get the answer
 
-            int input;
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter the number of sides on your dice!"); //invoking sout and passing in string
-            input = scanner.nextInt(); //assignment to the variable input, we are going to invoke the nextInt method on the scanner and its going to grab the next integer typed into the terminal
-            System.out.println("Now roll the dice!");
+            double diceRoll = Math.floor(Math.random() * sides); // floor rounds to nearest whole integer
+            // this is generating a random number that is the dice roll
+
+            // now we have to return an int inside the of the method
+            return diceRoll; // the method is done here after a return
 
 
 
-            System.out.println(roll);
+        }
+
+
+    }
+
+
+
 
         }
 
