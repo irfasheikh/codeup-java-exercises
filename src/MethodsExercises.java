@@ -66,30 +66,50 @@ public class MethodsExercises {
 
 //3. Factorial of a Number
 
-    public static long getFactorial(int num) {
-        Scanner scanner = new Scanner(System.in);
-        boolean itsWrong;
-        boolean confirmation;
-        do {
-            System.out.println("Enter a number between 1-10");
-            int userNumber = Integer.parseInt(scanner.next());
-            System.out.println(userNumber);
+//    public static long getFactorial(int num) {
+//        Scanner scanner = new Scanner(System.in);
+//        boolean itsWrong;
+//        boolean confirmation;
+//        do {
+//            System.out.println("Enter a number between 1-10");
+//            int userNumber = Integer.parseInt(scanner.next());
+//            System.out.println(userNumber);
+//
+//            System.out.println("Would you like to continue? [y/n]");
+//            String userInput = scanner.next();
+//
+//            if (confirmation = userInput.equalsIgnoreCase("y")) ;
+//            {
+//                long fact = 1;
+//
+//                for (int i = 2; i <= num; i++) {
+//                    fact = fact * i;
+//                }
+//                return fact;
+//
+//            }
+//            while ((confirmation)) ;
 
-            System.out.println("Would you like to conintue? [y/n]");
-            String userInput = scanner.next();
 
-            if (confirmation = userInput.equalsIgnoreCase("y")) ;
-            {
-                long fact = 1;
+//        }
 
-                for (int i = 2; i <= num; i++) {
-                    fact = fact * i;
-                }
-                return fact;
 
-            }
-            while ((confirmation)) ;
+        //4. dice rolling
 
+        public static void getRolling(int roll){
+            // it's void bc you are just spitting out what the user is inputing,
+            // public void you are using the method but you are not expecting an outcome from the function itself.
+            // void you are just getting the answer not making something to get the answer
+
+            int input;
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter the number of sides on your dice!"); //invoking sout and passing in string
+            input = scanner.nextInt(); //assignment to the variable input, we are going to invoke the nextInt method on the scanner and its going to grab the next integer typed into the terminal
+            System.out.println("Now roll the dice!");
+
+
+
+            System.out.println(roll);
 
         }
 

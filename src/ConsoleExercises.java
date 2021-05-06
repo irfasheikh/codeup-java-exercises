@@ -36,7 +36,9 @@ public class ConsoleExercises {
 //        //Calculate the perimeter and area of Codeup
 //
 //        //1.
-//        System.out.println("Enter the length and width of classroom");
+//        System.out.println("Enter the length
+//        of classroom");
+//          int length =
 //
 
 // WALKTHROUGH!!!!//

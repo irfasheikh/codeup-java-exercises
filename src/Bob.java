@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class Bob {
     public static void main(String[] args) {
 // where does the prompt for the user to initiate convo go?
+
 //        boolean talkMore = true;
         String question = "Sure."; //input end ?
         String yell = "Whoa, chill out!"; //input end !
@@ -35,10 +36,9 @@ public class Bob {
 
             }
 
-        } while (talkMore) ; // what is this part saying
+        } while (talkMore) ; // what is this part saying?
     }
 }
-
 
 //!!WALKTHROUGH!!//
 
