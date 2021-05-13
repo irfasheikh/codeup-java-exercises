@@ -8,8 +8,8 @@ public class InputTest {
         System.out.println("newInput.getInt() " + newInput.getInt());
 
 
-        Input booleanInput = new Input();
-        System.out.println(booleanInput.yesNo());
+//        Input booleanInput = new Input();
+//        System.out.println(booleanInput.yesNo());
 
     }
 }
